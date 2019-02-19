@@ -36,7 +36,7 @@ Nos encontramos estos `scripts` en nuestro proyecto base
 ```
 
 - `vue.js` → Cargamos la libreria VueJS con [uno de los métodos que recomiendan desde su página oficial](https://vuejs.org/v2/guide/#Getting-Started)
-- `main.js` → Aquí añadiremos nuestro código del Widget
+- `main.js` → Archivo dummy para comprobar que funciona la carga de JS desde el HTML
 
 Vamos a añadir un par mas
 
@@ -69,3 +69,8 @@ class WeatherApiService {
 ```
 
 Mediante esta clase, que instanciaremos desde nuestro `main.js`, tendremos disponible el método `findWeather` el cual nos devolverá los datos del tiempo de la ciudad que le pasemos
+
+---
+
+El código correspondiente a esta lección lo tienes disponible [aqui](https://github.com/CodelyTV/vue-progressive-migration-course/tree/master/02-WeatherApiService)
+
