@@ -6,7 +6,7 @@ _El curso [Migrando a VueJS progresivamente desde 0](https://pro.codely.tv/libra
 
 ---
 
-Vamos a generar un componente `comentsItem` de manera que luego podamos utilizarlo así
+Vamos a generar un componente `comments-item` de manera que luego podamos utilizarlo así
 
 ```html
 <comments-item
@@ -18,6 +18,32 @@ Vamos a generar un componente `comentsItem` de manera que luego podamos utilizar
         ullamco laboris nisi ut aliquip ex ea commodo."
 ></comments-item>
 ```
+
+Nuestra estructura de archivos va a quedar así:
+
+```
+├── css
+│   └── main.css
+├── index.html
+├── js
+│   ├── WeatherApiService.js
+│   ├── components
+│   │   └── CommentsItem.js
+│   ├── widget-comments.js
+│   └── widget-weather.js
+└── post.html
+```
+
+En `post.html` vamos a añadir nuevos scripts
+
+```html
+<script src="js/components/CommentsItem.js"></script>
+<script src="js/widget-comments.js"></script>
+```
+
+- `widget-comments.js` → Instancia Vue que tomará el control del bloque de HTML (y donde utilizaremos nuestro componente Vue)
+- `components/CommentsItem.js` → Definición del componente `comments-item`
+
 
 ## Instancia Vue
 
@@ -97,11 +123,6 @@ props: {
 ```
 
 Estos datos los podremos utilizar en la logica interna del componente y/o mostrarlos en el template
-
-
-
-
-
 
 ---
 
