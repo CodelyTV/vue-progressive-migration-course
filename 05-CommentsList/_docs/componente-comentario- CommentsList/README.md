@@ -28,7 +28,6 @@ Y cargamos este nuevo archivo en nuestro `post.html`
   <script src="js/components/CommentsList.js"></script>
 ```
 
-- `widget-comments.js` → Instancia Vue que tomará el control del bloque de HTML (y donde utilizaremos nuestro componente Vue)
 - `components/CommentsItem.js` → Definición del componente `comments-item`
 
 
@@ -102,6 +101,8 @@ Con esta directiva aplicada a `comments-item`, éste componente se repetirá tan
 ```
 
 Para [pasarle valores via props a un componente dentro de un `v-for` utilizamos `v-bind`](https://vuejs.org/v2/guide/list.html#v-for-with-a-Component) o su [variante shortcut → `:`](https://vuejs.org/v2/guide/syntax.html#v-bind-Shorthand)
+
+Con la directiva [`v-bind`](https://vuejs.org/v2/api/#v-bind) podemos "enganchar" dinamicamente un valor a una prop de un componente (si cambia el valor original, se actualizará automaticamente el dato en el componennte al que se le ha "bindeado" este valor via prop)
 
 Ademas, todos los componentes iterados deben recibir un [`:key` con valores diferentes](https://vuejs.org/v2/guide/list.html#v-for-with-a-Component)
 
