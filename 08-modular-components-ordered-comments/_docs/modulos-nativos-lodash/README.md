@@ -1,6 +1,6 @@
 # Usando módulos con soporte nativo de navegador y Lodash
 
-[![Usando módulos con soporte nativo de navegador y Lodash](./img/cover-modulos-nativos)](https://pro.codely.tv/library/migrando-a-vuejs-progresivamente-desde-0)  
+[![Usando módulos con soporte nativo de navegador y Lodash](./img/cover-modulos-nativos.png)](https://pro.codely.tv/library/migrando-a-vuejs-progresivamente-desde-0)  
 
 _El curso [Migrando a VueJS progresivamente desde 0](https://pro.codely.tv/library/migrando-a-vuejs-progresivamente-desde-0) está disponible a través de [CodelyTV](https://pro.codely.tv/)_
 
