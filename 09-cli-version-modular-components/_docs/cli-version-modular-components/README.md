@@ -20,7 +20,7 @@ lo que nos lanzará un asistente con el que mediante preguntas podremos configur
 
 Este comando nos creará una carpeta `demo-app-vue` y dentro toda el entorno preparado para poder empezar a trabajar
 
-Dentro de la carpeta podemos lanzar un servidor local con el proyecto haciendo → → `yarn serve`
+Dentro de la carpeta podemos lanzar un servidor local con el proyecto haciendo → `yarn serve`
 Para crear una versión lista para subir a producción haremos → `yarn build` (esta versión de producción se crea por defecto en la carpeta `dist`)
 
 ## Estilos
@@ -32,7 +32,7 @@ Tenemos que añadir _bootstrap_ a `public/index.html`
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 ```
 
-y cargar ell CSS propio de nuestro proyecto desde `main.js` (esto funcionará gracias al _css loader_ de _webpack_)
+y cargar el CSS propio de nuestro proyecto desde `main.js` (esto funcionará gracias al _css loader_ de _webpack_)
 
 ```javascript...
 import './css/main.css'
@@ -143,11 +143,9 @@ export default {
 
 ## `Widget.vue`
 
-<small>Slots → https://vuejs.org/v2/guide/components-slots.html</small> 
-<small>Class bindings → https://vuejs.org/v2/guide/class-and-style.html#Object-Syntax</small> 
-
 
 #### Uso de `slot`
+<small>Slots → https://vuejs.org/v2/guide/components-slots.html</small>  
 
 ```javascript
 <template>
@@ -158,7 +156,7 @@ export default {
 </template>
 ```
 
-Con <slot></slot> podemos dejar preparado nuestro componente para que admita _children_, es decir, para que admita tags dentro de él
+Con `slot` podemos dejar preparado nuestro componente para que admita _children_, es decir, para que admita tags dentro de él
 
 Por ejemplo...
 
@@ -181,6 +179,8 @@ o...
 ```
 
 #### Clases condicionales
+
+<small>Class bindings → https://vuejs.org/v2/guide/class-and-style.html#Object-Syntax</small> 
 
 Podemos aprovechar las propiedades `computed` para definir una serie de clases dinámicas que serán aplicadas en función del valor de otras propiedades
 
